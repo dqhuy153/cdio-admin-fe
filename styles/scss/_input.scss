@@ -1,0 +1,13 @@
+@import './vars';
+@import './mixin';
+
+.cmp-phone-input {
+  &--content {
+    border-bottom: 1px solid $color-black-300;
+    padding: 4px;
+
+    &:hover {
+      border-bottom: 1.5px solid $color-black-500;
+    }
+  }
+}

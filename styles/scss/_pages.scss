@@ -1,0 +1,165 @@
+@import './vars';
+@import './mixin';
+
+.page__header {
+  &--profile {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
+    &-avatar {
+      float: right;
+    }
+
+    &-username {
+      cursor: pointer;
+      font-size: 20px;
+      margin-left: 15px;
+      max-width: 150px;
+      text-align: center;
+      margin-right: 10px;
+      text-overflow: ellipsis;
+      overflow: hidden;
+      white-space: nowrap;
+    }
+  }
+
+  &--notification {
+    cursor: pointer;
+
+    &-active {
+      cursor: pointer;
+    }
+    &-active::before {
+      content: '';
+      display: block;
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background: rgb(245, 77, 77);
+      transform: translate(200%, 70%);
+    }
+  }
+
+  &--notification-modal {
+    width: 400px;
+    overflow: auto;
+
+    &--header {
+      background: rgb(226, 216, 211);
+      padding: 16px 24px;
+    }
+
+    &--body {
+      overflow: auto;
+      max-height: 500px;
+    }
+
+    &--content {
+      cursor: pointer;
+      overflow: hidden;
+    }
+  }
+
+  &--profile-modal {
+    width: 180px;
+  }
+}
+
+.page-account-management {
+  &-- footer {
+    position: relative;
+  }
+  &--button-footer {
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+    display: flex;
+    align-items: center;
+  }
+}
+
+.page-course-detail {
+  &__course-info {
+    width: 100%;
+  }
+  &__chapter-info {
+    &--item {
+      border-bottom: $default-border;
+      border-top: $default-border;
+      padding: 15px 0;
+      //   &:hover {
+      //     background: rgba(1, 151, 252, 0.05) !important;
+      //   }
+    }
+  }
+}
+
+.page-chapter-detail {
+  padding: 15px;
+
+  &__chapter-info {
+    padding: 20px;
+    border: $default-border;
+    border-radius: $default-border-radius;
+  }
+  &__title {
+    font-size: 22px;
+    font-weight: 300;
+    transition: all 0.3s ease;
+  }
+}
+
+.page-chapter-detail {
+  &__lesson-preview {
+    &--sidebar {
+      border-left: $default-border;
+
+      &__lesson {
+        padding: 5px 10px;
+        &-active {
+          background: rgba(1, 151, 252, 0.05) !important;
+        }
+        &-item {
+          &-active {
+            background: rgba(1, 151, 252, 0.05) !important;
+          }
+
+          &:hover {
+            background: rgba(1, 151, 252, 0.05) !important;
+
+            transition: all 0.3s ease;
+          }
+        }
+      }
+
+      &__icon {
+        cursor: pointer;
+        color: rgb(175, 174, 174);
+        &:hover {
+          color: #333;
+        }
+      }
+    }
+  }
+}
+
+.page-preview {
+  &__course {
+    cursor: pointer;
+    // border: $default-border;
+
+    img {
+      transition: all 0.25s linear;
+      height: 30vh;
+
+      &:hover {
+        object-fit: contain;
+      }
+    }
+
+    &:hover {
+      // border: none;
+    }
+  }
+}

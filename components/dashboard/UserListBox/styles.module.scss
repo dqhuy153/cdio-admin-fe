@@ -1,0 +1,10 @@
+.container {
+  // .item:not(:last-child) {
+  //   border-bottom: 1px solid #e6e6e6;
+  // }
+  .item {
+    &:hover {
+      background-color: #f5f5f5;
+    }
+  }
+}

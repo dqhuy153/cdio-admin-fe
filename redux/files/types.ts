@@ -1,0 +1,6 @@
+export enum UploadFile {
+  UPLOAD_REQUEST = 'files/UPLOAD_REQUEST',
+  UPLOAD_PROGRESS = 'files/UPLOAD_PROGRESS',
+  UPLOAD_SUCCESS = 'files/UPLOAD_SUCCESS',
+  UPLOAD_FAILURE = 'files/UPLOAD_FAILED',
+}

@@ -1,0 +1,33 @@
+@import './mixin';
+@import './vars';
+
+.react-tabs {
+  & [role='tablist'] {
+    border-bottom: 1px solid $color-border;
+  }
+
+  & &__tab {
+    padding: 8px 0;
+    margin-right: 32px;
+  }
+
+  & &__tab-panel--selected {
+    width: 100%;
+  }
+
+  & &__tab--selected {
+    background-color: transparent;
+    font-weight: $font-weight-bold;
+    border: none;
+    color: $color-secondary;
+    border-bottom: 3px solid $color-secondary;
+
+    @include focus {
+      border-color: $color-secondary;
+
+      &::after {
+        content: none;
+      }
+    }
+  }
+}

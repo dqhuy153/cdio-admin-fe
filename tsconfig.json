@@ -1,0 +1,52 @@
+{
+  "compilerOptions": {
+    "allowJs": true,
+    "allowSyntheticDefaultImports": true,
+    "jsx": "preserve",
+    "lib": ["dom", "es2017"],
+    "module": "esnext",
+    "moduleResolution": "node",
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "preserveConstEnums": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "target": "esnext",
+    "removeComments": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "sourceMap": true,
+    "baseUrl": "./",
+    "paths": {
+      "@components/*": ["./components/*"],
+      "@config/*": ["./config/*"],
+      "@global/*": ["./global/*"],
+      "@helpers/*": ["./helpers/*"],
+      "@pages/*": ["./pages/*"],
+      "@public/*": ["./public/*"],
+      "@redux/*": ["./redux/*"],
+      "@styles/*": ["./styles/*"],
+      "@types/*": ["./types/*"],
+      "@utils/*": ["./utils/*"]
+    },
+    "noImplicitAny": false,
+    "forceConsistentCasingInFileNames": true,
+    "esModuleInterop": true,
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "noEmit": true,
+    "incremental": true
+  },
+  "exclude": ["node_modules", "**/*.test.ts"],
+  "include": [
+    "next-env.d.ts",
+    "pages/**/*.tsx",
+    "pages/**/*.ts",
+    "components/**/*.tsx",
+    "components/**/*.ts",
+    "components/**/**/*.tsx",
+    "components/**/**/*.ts",
+    "static/**/*.tsx",
+    "static/**/*.ts"
+  ]
+}
